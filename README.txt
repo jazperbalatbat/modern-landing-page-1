@@ -1,1 +1,0 @@
-This is a Modern Landing Page developed by @ragraolle.
