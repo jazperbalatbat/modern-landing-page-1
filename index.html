@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/MLP1/styles.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel&family=Josefin+Slab:wght@100&family=Playfair+Display&family=Press+Start+2P&family=Six+Caps&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tangerine&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="../MLP1/images/logo.ico" />
+    <title>DR MARTENS</title>
+</head>
+
+<body>
+    <header id="hero">
+        <div class="hero__container">
+            <h1 class="title">Dr. Martens</h1>
+            <p class="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est ea vitae mollitia esse
+                ipsum nam!</p>
+            <a href="" class="btn">SEE MORE</a>
+        </div>
+    </header>
+
+    <main id="main">
+        <div class="promo">
+            <article class="item">
+                <img src="../MLP1/images/dm1.webp">
+                <h1 class="title">BOOTS</h1>
+                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo quibusdam, aperiam
+                    quam modi est doloremque!</p>
+            </article>
+            <article class="item">
+                <img src="../MLP1/images/dm5.webp">
+                <h1 class="title">LOWS CLASSIC</h1>
+                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus odio aliquid
+                    molestias nobis tempora ipsam.</p>
+            </article>
+            <article class="item">
+                <img src="../MLP1/images/dm7.webp">
+                <h1 class="title">SANDALS</h1>
+                <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti, sunt illum!
+                    Nisi hic voluptate possimus?</p>
+            </article>
+            <article class="item">
+                <img src="../MLP1/images/dm9.webp">
+                <h1 class="title">LOWS MODERN</h1>
+                <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima ab ipsam
+                    nesciunt vero at maxime?</p>
+            </article>
+        </div>
+        <div class="info">
+            <h1 class="title">
+            </h1>
+        </div>
+        <div class="product">
+            <div class="item boots">
+                <span class="card"></span>
+                <div class="btn">
+                    <button class="color bc1"></button>
+                    <button class="color bc2"></button>
+                    <button class="color bc3"></button>
+                    <button class="color bc4"></button>
+                </div>
+                <img src="../MLP1/images/products/dm1-removebg-preview.png" alt="">
+                <h1 class="title">JEONGGUK</h1>
+                <p class="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque nesciunt
+                    aspernatur quia tempore quod alias magnam ex. Hic eveniet, saepe sit veniam enim animi commodi!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            </div>
+            <div class="item low1">
+                <span class="card"></span>
+                <div class="btn">
+                    <button class="color l1c1"></button>
+                    <button class="color l1c2"></button>
+                </div>
+                <img src="../MLP1/images/products/dm6-removebg-preview.png" alt="">
+                <h1 class="title">SEOKJIN</h1>
+                <p class="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque nesciunt
+                    aspernatur quia tempore quod alias magnam ex. Hic eveniet, saepe sit veniam enim animi commodi!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            </div>
+            <div class="item low2">
+                <span class="card"></span>
+                <div class="btn">
+                    <button class="color l2c1"></button>
+                    <button class="color l2c2"></button>
+                </div>
+                <img src="../MLP1/images/products/dm9-removebg-preview.png" alt="">
+                <h1 class="title">TAEHYUNG</h1>
+                <p class="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque nesciunt
+                    aspernatur quia tempore quod tempore alias magnam ex. Hic eveniet, saepe sit veniam enim animi
+                    commodi! </p>
+            </div>
+            <div class="item sandals">
+                <span class="card"></span>
+                <div class="btn">
+                    <button class="color sc1"></button>
+                    <button class="color sc2"></button>
+                </div>
+                <img src="../MLP1/images/products/dm8-removebg-preview.png" alt="">
+                <h1 class="title">JIMIN</h1>
+                <p class="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque nesciunt
+                    aspernatur quia tempore quod alias magnam ex. Hic eveniet, saepe sit veniam enim animi commodi!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>dev by @ragraolle</p>
+    </footer>
+
+    <script>
+        let boots = document.querySelector(".boots>img");
+        let boot1 = document.querySelector(".bc1");
+        let boot2 = document.querySelector(".bc2");
+        let boot3 = document.querySelector(".bc3");
+        let boot4 = document.querySelector(".bc4");
+        let lows1 = document.querySelector(".low1>img")
+        let low1 = document.querySelector(".l1c1");
+        let low2 = document.querySelector(".l1c2");
+        let lows2 = document.querySelector(".low2>img")
+        let low21 = document.querySelector(".l2c1");
+        let low22 = document.querySelector(".l2c2");
+        let sandals = document.querySelector(".sandals>img")
+        let sandal1 = document.querySelector(".sc1");
+        let sandal2 = document.querySelector(".sc2");
+
+        function border(x) {
+            x.style.cssText = "border: solid 1px rgb(44, 44, 44)";
+        }
+
+        boot1.addEventListener("click", () => {
+            boot1.style.cssText = "border: solid 1px grey";
+            border(boot2);
+            border(boot3);
+            border(boot4);
+            boots.src = "../MLP1/images/products/dm1-removebg-preview.png"
+        });
+        boot2.addEventListener("click", () => {
+            boot2.style.cssText = "border: solid 1px grey";
+            border(boot1);
+            border(boot3);
+            border(boot4);
+            boots.src = "../MLP1/images/products/dm2-removebg-preview.png"
+        });
+        boot3.addEventListener("click", () => {
+            boot3.style.cssText = "border: solid 1px grey";
+            border(boot2);
+            border(boot1);
+            border(boot4);
+            boots.src = "../MLP1/images/products/dm3-removebg-preview.png"
+        });
+        boot4.addEventListener("click", () => {
+            boot1.style.cssText = "border: solid 1px grey";
+            border(boot2);
+            border(boot3);
+            border(boot1);
+            boots.src = "../MLP1/images/products/dm4-removebg-preview.png"
+        });
+        low1.addEventListener("click", () => {
+            low1.style.cssText = "border: solid 1px grey";
+            border(low2);
+            lows1.src = "../MLP1/images/products/dm6-removebg-preview.png"
+        });
+        low2.addEventListener("click", () => {
+            low2.style.cssText = "border: solid 1px grey";
+            border(low1);
+            lows1.src = "../MLP1/images/products/dm5-removebg-preview.png"
+        });
+        low22.addEventListener("click", () => {
+            low22.style.cssText = "border: solid 1px grey";
+            border(low21);
+            lows2.src = "../MLP1/images/products/dm10-removebg-preview.png"
+        });
+        low21.addEventListener("click", () => {
+            low21.style.cssText = "border: solid 1px grey";
+            border(low22);
+            lows2.src = "../MLP1/images/products/dm9-removebg-preview.png"
+        });
+        sandal1.addEventListener("click", () => {
+            sandal1.style.cssText = "border: solid 1px grey";
+            border(sandal2);
+            sandals.src = "../MLP1/images/products/dm8-removebg-preview.png"
+        });
+        sandal2.addEventListener("click", () => {
+            sandal2.style.cssText = "border: solid 1px grey";
+            border(sandal1);
+            sandals.src = "../MLP1/images/products/dm7-removebg-preview.png"
+        });
+    </script>
+
+</body>
+
+</html>
